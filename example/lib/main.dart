@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   Future<void> doDfu(String deviceId) async {
-    stopScan();
+    //stopScan();
     dfuRunning = true;
     try {
       var s = await FlutterNordicDfu.startDfu(
