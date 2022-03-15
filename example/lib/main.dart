@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_nordic_dfu/flutter_nordic_dfu.dart';
 import 'package:flutter_blue/flutter_blue.dart';
 
+import 'dart:developer';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
@@ -45,6 +47,7 @@ class _MyAppState extends State<MyApp> {
       );
       debugPrint("HELLLLOOOOOOOOOOOOOOOOOOO");
       print("HELLLLLLLLLooooooooooooo");
+      log("HIIIIIIIIIIIIIIIIIIIIIIIIIiiii");
       print(s);
       dfuRunning = false;
     } catch (e) {
