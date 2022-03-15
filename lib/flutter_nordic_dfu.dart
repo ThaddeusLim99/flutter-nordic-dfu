@@ -100,40 +100,51 @@ class FlutterNordicDfu {
         const AndroidSpecialParameter(),
     IosSpecialParameter iosSpecialParameter = const IosSpecialParameter(),
   }) async {
-
+    print("calling method");
     _channel.setMethodCallHandler((MethodCall call) async {
       switch (call.method) {
         case "onDeviceConnected":
+          print("calling method: on DeviceConnected");
           progressListener?.onDeviceConnected(call.arguments);
           break;
         case "onDeviceConnecting":
+          print("calling method: on DeviceConnecting");
           progressListener?.onDeviceConnecting(call.arguments);
           break;
         case "onDeviceDisconnected":
+          print("calling method: on DeviceDisconnected");
           progressListener?.onDeviceDisconnected(call.arguments);
           break;
         case "onDeviceDisconnecting":
+          print("calling method: on DeviceDisconnecting");
           progressListener?.onDeviceDisconnecting(call.arguments);
           break;
         case "onDfuAborted":
+          print("calling method: onDfuAborted");
           progressListener?.onDfuAborted(call.arguments);
           break;
         case "onDfuCompleted":
+          print("calling method: onDfuCompleted");
           progressListener?.onDfuCompleted(call.arguments);
           break;
         case "onDfuProcessStarted":
+          print("calling method: onDfuProcessStarted");
           progressListener?.onDfuProcessStarted(call.arguments);
           break;
         case "onDfuProcessStarting":
+          print("calling method: onDfuProcessStarting");
           progressListener?.onDfuProcessStarting(call.arguments);
           break;
         case "onEnablingDfuMode":
+          print("calling method: onEnablingDfuMode");
           progressListener?.onEnablingDfuMode(call.arguments);
           break;
         case "onFirmwareValidating":
+          print("calling method: onFirmwareValidating");
           progressListener?.onFirmwareValidating(call.arguments);
           break;
         case "onError":
+          print("calling method: onError");
           progressListener?.onError(
             call.arguments['deviceAddress'],
             call.arguments['error'],
@@ -142,6 +153,7 @@ class FlutterNordicDfu {
           );
           break;
         case "onProgressChanged":
+          print("calling method: onProgressChanged");
           progressListener?.onProgressChanged(
             call.arguments['deviceAddress'],
             call.arguments['percent'],
@@ -152,6 +164,7 @@ class FlutterNordicDfu {
           );
           break;
         default:
+          print("calling method: default");
           break;
       }
     });
