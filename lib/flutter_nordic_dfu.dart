@@ -100,7 +100,7 @@ class FlutterNordicDfu {
         const AndroidSpecialParameter(),
     IosSpecialParameter iosSpecialParameter = const IosSpecialParameter(),
   }) async {
-    print("calling method");
+    print("calling method in 88b3ab5");
     _channel.setMethodCallHandler((MethodCall call) async {
       switch (call.method) {
         case "onDeviceConnected":
