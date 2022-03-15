@@ -43,6 +43,8 @@ class _MyAppState extends State<MyApp> {
           print('deviceAddress: $deviceAddress, percent: $percent');
         }),
       );
+      debugPrint("HELLLLOOOOOOOOOOOOOOOOOOO");
+      print("HELLLLLLLLLooooooooooooo");
       print(s);
       dfuRunning = false;
     } catch (e) {
